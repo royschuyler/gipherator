@@ -1,5 +1,19 @@
-<ion-view view-title="Random">
+<ion-view view-title="You get a....">
   <ion-content>
-  <h1>Random</h1>
+  	<div ng-show="randomImg" class="list card">
+  		<h2>Imgur Image </h2>
+	    <a class="item item-img">
+	    <img class="imgurs" ng-src="{{randomimg[0].link}}">
+	    <h2>{{imgur.title}}</h2>
+	    </a>
+	  </div>
+
+	  <div ng-show="randomGiph" class="list card" >
+	  	<h2> Giphy </h2>
+    	<div class="item item-image">
+	    <img class="gifs" ng-src="{{randomgiph.image_url}}">
+	    <h2>{{giphy.title}}</h2>
+	    </div>
+    </div>
   </ion-content>
 </ion-view>

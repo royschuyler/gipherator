@@ -1,0 +1,10 @@
+<ion-view view-title="Imgurs">
+  <ion-content>
+  <div class="list">
+    <a class="item item-thumbnail-left" ng-repeat="(id, imgur) in imgurs">
+    <img class="gifs" ng-src="{{imgur.link}}">
+    <h2>{{giphy.title}}</h2>
+    </a>
+  </div>
+  </ion-content>
+</ion-view>

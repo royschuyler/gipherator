@@ -1,11 +1,11 @@
 <ion-view view-title="Giphs">
   <ion-content>
-  <div class="list card">
-    <div class="item item-image" ng-repeat="(id, giphy) in giphs">
-    <img class="gifs" ng-src="{{giphy.images.downsized.url}}}">
-    <p>{{giphy.title}}</p>
+    <div class="list card" ng-repeat="(id, giphy) in giphs">
+    	<div class="item item-image">
+	    <img class="gifs" ng-src="{{giphy.images.downsized.url}}">
+	    <h2>{{giphy.title}}</h2>
+	    </div>
     </div>
-  </div>
  </ion-content>
 </ion-view>
 

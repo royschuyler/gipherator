@@ -20,17 +20,21 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+     <!-- <script type="text/javascript" src="js/SocialSharing.js"></script> -->
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+   <!--  // <script type="text/javascript" src="js/SocialSharing.js"></script> -->
   </head>
   <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
+    <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
     </ion-nav-bar>
+    
     <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
